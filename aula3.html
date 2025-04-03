@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula formulário</title>
+</head>
+
+<body>
+    <h2>Criação de formulários html5</h2>
+    <form>
+        Primeiro nome <input type="text" name="primeiro_nome" placeholder="digite seu primeiro nome"> <br>
+        Ultimo nome <input type="text" name="ultimo_nome" placeholder="digite seu ultimo nome"> <br>
+        Email <br>
+        <input type="email" name="email" placeholder="seu email"> <br>
+        Senha: <br>
+        <input type="password" name="digite a senha" placeholder="digite a senha"><br>
+        <label for="masc">Masculino</label>
+        <input type="radio" name="genero" id="masc" value="masculino"><br>
+        <label for="fem">Feminino</label>
+        <input type="radio" name="genero" id="fem" value="feminino"><br>
+        Ocupação: <br>
+        <select id="ocupação" name="ocupação">
+            <optgroup label="técnico">
+                <option label="desenvolvedor" value="desenvolvedor"></option>
+                <option label="engenheiro" value="engenheiro"></option>
+            </optgroup>
+            <optgroup label="não técnico">
+                <option label="consultor" value="consultor" selected></option>
+                <option label="gerente" value="gerente"></option>
+            </optgroup>
+        </select>
+        Comentário <br>
+        <textarea rows="7" cols="50" placeholder="seu comentário"></textarea>
+        <br><br>
+        Escolha o arquivo a ser carregado no botão abaixo: <br>
+        <input type="file" name="arquivo"> <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" vaue="limpar">
+    </form>
+</body>
+
+</html>
